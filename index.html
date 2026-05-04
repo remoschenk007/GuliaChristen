@@ -285,6 +285,21 @@ nav{padding:18px 20px}
 .cli-grid{padding:2px 20px 60px}
 footer{padding:60px 20px 36px}
 }
+
+/* ── FORCE WHITE LINKS — NO BLUE EVER ── */
+*,*::before,*::after{-webkit-tap-highlight-color:transparent}
+a,a:any-link,a:link,a:visited,a:hover,a:active,a:focus{
+color:#f0ebe2!important;
+text-decoration:none!important;
+-webkit-text-decoration:none!important;
+}
+.nav-links a,.fnav a,.footer-nav a,.mob-menu a{
+color:rgba(240,235,226,0.56)!important;
+}
+.nav-links a:hover,.nav-links a.on,.fnav a:hover,.mob-menu a:hover{
+color:#f0ebe2!important;
+}
+.nav-logo,.nav-logo *{color:#f0ebe2!important}
 </style>
 
 </head>
