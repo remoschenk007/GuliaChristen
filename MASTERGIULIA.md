@@ -1,172 +1,218 @@
-# MASTERGIULIA — Projekt Timeline & Dokumentation
-**Giulia Christen · Bespoke Leather Couture · Zürich & Hamburg**
+# MASTERGIULIA — Master Dokumentation
+**Giulia Christen · Dark Artisan Couture · Zürich & Hamburg**
+*Stand: Mai 2026*
 
 ---
 
-## 🌹 PROJEKT ÜBERSICHT
+## 👤 ÜBER GIULIA CHRISTEN
 
-Komplette Website + Intro-Splash-Seite für **Giulia Christen**, Master Leather Designerin.
-- Ausgebildet: Kunstschule Zürich → NABA Milan → Guy Laroche Paris → Pyrate Style Hamburg
-- Kunden: Keith Richards, Lenny Kravitz, Lionel Richie, The Scorpions
-- Ateliers: Zürich (Hauptsitz) + Hamburg
+- **Alter:** 38 Jahre
+- **Ausbildung:** Kunstschule Zürich → NABA Milan (Fashion & Textile Design) → Guy Laroche Paris (Assistant Designer) → Hamburg (Leder & Silber)
+- **Ateliers:** Zürich (Avery Manufattura) + Hamburg (Pyrate Style, Eppendorfer Weg 235, 20251 Hamburg)
+- **E-Mail:** giulia@giuliachristen.com *(kein Bindestrich)*
+- **Domain:** giuliachristen.com *(kein Bindestrich — überall so)*
+- **Kunden:** Johnny Depp, Keith Richards, Lenny Kravitz, Lionel Richie, The Scorpions
+- **Website-Entwicklung:** Remo Schenk (`remoschenk007`)
 
 ---
 
-## 📁 GITHUB REPOSITORY
+## 🌐 GITHUB REPOSITORY
 
-**Repo:** `github.com/remoschenk007/GuliaChristen` (Public)  
-**Live URL:** `https://remoschenk007.github.io/GuliaChristen/`
+- **Repo:** `github.com/remoschenk007/GuliaChristen` (Public)
+- **Live URL:** `https://remoschenk007.github.io/GuliaChristen/`
+- **Ziel-Domain:** `giuliachristen.com` *(noch nicht verbunden)*
 
 ### Aktuelle Dateistruktur auf GitHub:
-| Datei | Inhalt |
+| Datei | Inhalt | Status |
+|-------|--------|--------|
+| `index.html` | Intro-Splash (Rose + Unterschrift animiert) | ✅ Live |
+| `main.html` | Hauptwebsite (5.2 MB) | ⚠️ Neue Version hochladen |
+| `Impressum.html` | Impressum CH + DE + IT | ✅ |
+| `Datenschutz.html` | Datenschutz DSG + DSGVO + IT | ✅ |
+| `MASTERGIULIA.md` | Diese Dokumentation | ✅ |
+
+### Noch hochzuladen:
+- `main.html` — neue Version mit allen Änderungen
+- `sitemap.xml`
+- `robots.txt`
+
+---
+
+## 🎨 DESIGN-PHILOSOPHIE
+
+**Konzept:** Dark Artisan Couture — Yamamoto-Geist, Wabi-Sabi, anti-fashion, anti-trend.
+Nicht laut. Tiefe statt Lautstärke. Wie ein altes Pariser Atelier das keine Werbung braucht.
+
+**Stil-Referenzen:** Yohji Yamamoto, Ann Demeulemeester, Rick Owens.
+Nicht Gothic. Nicht Rock. Dark Artisan Couture.
+
+**Positionierung:** Giulia ist der Star — nicht die Läden, nicht die Brands.
+Pyrate Style und Avery Manufattura sind Kulissen. Sie ist die Geschichte.
+Preise: CHF 1'800+ für Jacken. Zielgruppe: oberes Segment. Die Mittelschicht verschwindet.
+
+### Design-System:
+```css
+--b:  #060606             /* fast schwarz */
+--b2: #0b0b0b
+--w:  rgba(237,232,223,0.95)  /* warmes Weiss — Haupttext */
+--w2: rgba(237,232,223,0.70)  /* Fliesstext */
+--w3: rgba(237,232,223,0.32)  /* Labels, Nav */
+Font: Cormorant Garamond (italic, 200/300) + Cinzel (Versalien)
+```
+
+**Details:** Filmkorn-Overlay immer aktiv. Custom Cursor. Alle Fotos: grayscale + contrast + brightness gedämpft. Unterschrift schreibt sich via clip-path Animation.
+
+---
+
+## 📄 WEBSITE STRUKTUR (main.html)
+
+Single-Page-App mit JavaScript Navigation.
+
+| Seite | Inhalt |
 |-------|--------|
-| `index.html` | Intro-Splash (Rose + Unterschrift) — **Startseite** |
-| `main.html` | Vollständige Website (6.65 MB) — **Hauptwebsite** |
+| **Home** | Rose als Hero-Bild, Unterschrift animiert, "Every piece made once." |
+| **About** | Giulia-Portrait (Augenbinde-Foto), kein Lebenslauf — nur wer sie ist, ihre Kunden |
+| **Commission** | 6 Produkt-Karten mit Enquire-Modal → Formspree |
+| **The Craft** | Leder + Silber — Philosophie, echte Bilder, Yamamoto-Quote |
+| **Artisan Noir** | Kleider — avantgarde, Paris-DNA, schwarz |
+| **Clients** | Johnny Depp · Keith Richards · Lenny Kravitz · Lionel Richie · The Scorpions |
+| **Press** | 3 Artikel (Avery Magazin Zürich, Opium Hamburg, pyratestyle.com) |
+| **Contact** | Formular (Formspree mpqnknvv) + Adresse |
+
+**Separate Dateien:** `impressum.html` + `datenschutz.html` (eigene HTML-Files, vom Footer verlinkt)
+
+**Nav-Reihenfolge:** Home → About → Commission → The Craft → Artisan Noir → Clients → Press → Contact
 
 ---
 
-## 🗓️ TIMELINE
+## 🔧 TECHNISCHES
 
-### Phase 1 — Hauptwebsite
-- **Designsprache:** Tiefschwarz `#030303`, Weiß `rgba(237,232,223,0.48)`, Filmkorn-Overlay
-- **Fonts:** Cormorant Garamond (Italic/Light) + Cinzel + Jost
-- **Seiten:** Home, About, Commission, Clients, Press, Contact, Impressum, Datenschutz
-- **Technologie:** Single-Page-App (JavaScript Navigation), Base64-eingebettete Bilder
+### Formspree:
+- **Account:** Giulia Christen (Registriert mit byraimondo@gmail.com)
+- **Form-Name:** Giulia Christen Contact
+- **Form ID:** `mpqnknvv`
+- **Endpoint:** `https://formspree.io/f/mpqnknvv`
+- **⚠️ TODO:** giulia@giuliachristen.com als Linked Email hinzufügen → Form auf diese E-Mail umstellen
 
-**Design-Entscheidungen (final):**
-- ❌ Keine Stats-Bar (30+, 100%, ∞) — zu werblich
-- ❌ Kein Laufband mit Kunden-Namen
-- ❌ Kein Pyrate Style / Hamburg-Partner erwähnt
-- ✅ Clients als stille Liste — würdevoll, nicht laut
-- ✅ "Er wählte ihre Hände. Nichts mehr muss gesagt werden."
-- ✅ Schwarz/Weiß komplett, kein Gold
+### SEO (in main.html eingebaut):
+- Title, Description, Keywords (Leder + Silber + Zürich + Hamburg)
+- Open Graph (WhatsApp / LinkedIn / Facebook Preview)
+- Schema.org: Person + LocalBusiness + FAQPage
+- `robots.txt` — alle AI-Crawler erlaubt (GPTBot, Claude, Perplexity, Anthropic)
+- `sitemap.xml` — alle Seiten
 
-**Datei:** `giulia_v5.html` → auf GitHub als `main.html`
-
----
-
-### Phase 2 — Intro Splash Seite
-
-**Konzept:** Rose im Glas (zerfallend) + Unterschrift schreibt sich
-
-**Rose-Bild:** `5006DF63-BA66-42D9-AC22-4C3333EB8882.png`  
-→ Schwarze Rose in Glasglocke, hängend, zerfällt nach unten
-
-**Unterschrift:** Echte Handschrift von Giulia Christen  
-→ Foto auf weißem Papier, schwarze Tinte (`FullSizeRender.jpeg` — bestes Foto)
-
-**Technische Lösung:**
-- Unterschrift als transparentes PNG extrahiert (Tinte weiß, Papier = alpha 0)
-- `clip-path: inset(0 100% 0 0)` Animation von links nach rechts → schreibt sich
-- `drop-shadow` für leichten Glanz
-
-**Finale Versionen (alle gespeichert):**
-| Datei | Farbe | Status |
-|-------|-------|--------|
-| `intro_weiss.html` | Weiß `rgba(255,255,255)` | ✅ Approved |
-| `intro_silbergrau.html` | Silbergrau `RGB(195,200,205)` | Option |
-| `intro_champagne.html` | Champagner/Gold | Option |
-| `intro_silver.html` | Silber-Blau | Option |
-
-**Responsive:**
-- **Mobile:** Rose fullscreen `center 42%/cover`
-- **Desktop:** Rose kleiner `background-size: 70%` damit ganze Rose sichtbar
-
----
-
-## ⚠️ AKTUELLE PROBLEME / TODO
-
-### 1. main.html zeigt 404
-**Problem:** `index.html` (Intro) verlinkt auf `giulia_v5.html` — die Datei heisst auf GitHub aber `main.html`
-
-**Fix:** In `intro_weiss.html` ist der Link bereits auf `main.html` korrigiert.  
-→ **Lösung:** Neue `intro_weiss.html` als `index.html` auf GitHub hochladen (alte ersetzen)
-
-### 2. main.html zu groß (6.65 MB)
-**Problem:** GitHub Editor kann sie nicht anzeigen ("Sorry, this file is too big")  
-**Workaround:** Upload via "Add file → Upload files" funktioniert trotzdem  
-**Langfristige Lösung:** Bilder externalisieren (separat hosten), dann wird HTML < 100 KB
-
-### 3. Formspree noch nicht eingerichtet
-In `main.html` steht `YOUR_FORM_ID` als Platzhalter  
-→ **Lösung:** formspree.io → neues Formular → ID einsetzen
-
----
-
-## 🔧 TECHNISCHE DETAILS
-
-### Website (main.html)
-```
-Größe: 6.65 MB (Bilder als Base64 eingebettet)
-Navigation: JavaScript SPA (Single Page App)
-Kontaktformular: Formspree (action="https://formspree.io/f/YOUR_FORM_ID")
-SEO: Schema.org JSON-LD, FAQPage, Person, LocalBusiness
-Gerichtsstand: Zürich, Schweizer Recht
-```
-
-### Intro (index.html)
-```
-Größe: ~212 KB
-Rose: JPEG Base64 eingebettet
-Unterschrift: PNG transparent Base64 eingebettet
-Animation: clip-path reveal + fadeIn
-Link zu: main.html
-```
-
----
-
-## 🎨 DESIGN-SYSTEM
-
-### Farben
-```css
---background: #060606 (fast schwarz)
---text: rgba(237,232,223,0.88) (warmes Weiß)
---text-dim: rgba(237,232,223,0.18) (dezent)
---mid: rgba(237,232,223,0.055) (kaum sichtbar)
-```
-
-### Typografie
-```css
---serif: 'Cormorant Garamond' (Hauptschrift, italic, 300)
---caps: 'Cinzel' (Navigation, Labels)
---sans: 'Jost' (Fließtext, 200)
-```
-
-### Philosophie
-> Nicht laut. Nicht hausieren. Tiefe statt Lautstärke.  
-> Haltung statt Marketing. Wie ein altes Atelier in Paris  
-> das keine Werbung braucht — weil jeder der es kennt, es kennt.
+### Website-Grösse:
+- `main.html`: 5.2 MB (alle Bilder als Base64 eingebettet)
+- Bilder können später externalisiert werden → dann < 200 KB
 
 ---
 
 ## 📸 BILDER / ASSETS
 
-| Asset | Beschreibung | Verwendung |
-|-------|-------------|------------|
-| `5006DF63...png` | Schwarze Rose in Glasglocke | Intro Hintergrund |
-| `FullSizeRender.jpeg` | Giulias Unterschrift auf weißem Papier | Intro Signatur |
-| `IMG_0266.jpeg` | Ältere Rose (erste Version) | Archiv |
-| `photo.jpeg` | Unterschrift zweizeilig (G + C groß) | Archiv |
-| `imgs2.json` | Alle Website-Bilder als Base64 | main.html |
+### Intro (index.html):
+- Rose: `5006DF63-BA66-42D9-AC22-4C3333EB8882.png` — Schwarze Rose in Glasglocke
+- Unterschrift: `FullSizeRender.jpeg` → als transparentes PNG extrahiert
+
+### About Portrait:
+- `IMG_0279.jpeg` — Giulia mit Leder-Augenbinde ("Wake me up when stammerda ends")
+- Instagram-Handle wurde weggecroppt (unterer schwarzer Balken entfernt)
+
+### Artisan Noir (Kleider-Sektion):
+- `IMG_0439.jpg` — Modell Lederweste outdoor, Schwarzweiss
+- `IMG_0440.jpg` — Modell Turtleneck Leder, Schwarzweiss, nah
+- `IMG_0433.jpg` — Dunkle Figur sitzend, atmosphärisch
+- `IMG_0434.jpg` — Weisses Kleid mit Silberketten vorne
+- `IMG_0436.jpg` — Weisses Kleid Rücken mit hängenden Silberketten
+
+### The Craft — Leder:
+- `IMG_0437.jpg` — Leder-Textur Nahaufnahme (fast abstrakt)
+- `IMG_0438.jpg` — Lederschnittmuster flat lay, Schwarzweiss
+- `IMG_0428.jpg` — Giulias Hände beim Arbeiten (Silberringe sichtbar) ← Stärkstes Bild
+
+### The Craft — Silber:
+- `IMG_0430.jpg` — Strukturierter Silber-Siegelring 1
+- `IMG_0441.jpg` — Ovaler Ring mit geschnitztem Stein
+- `IMG_0432.jpg` — Strukturierter Silber-Siegelring 2
+- `IMG_0428.jpg` — Giulias Hände mit Silberringen (4. Bild im Grid)
+
+### Lederjacken (Commission + Home):
+- `IMG_9976.jpeg` bis `IMG_9996.jpeg` — j1 bis j12 (12 Jacken-Bilder)
+- `IMG_0040.png` — Giulia Portrait (älteres Foto, Backup)
+
+### Encoded Assets (temporär in /tmp, neuer Chat muss neu encodieren):
+- `/tmp/imgs_new.json` — j1-j12, giulia
+- `/tmp/new_imgs.json` — alle neuen Bilder (noir, craft, silver, hands)
+- `/tmp/sig_b64.txt` — Unterschrift PNG transparent Base64
+- `/tmp/rose_new.txt` — Rose JPEG Base64
 
 ---
 
-## ✅ NÄCHSTE SCHRITTE
+## 📋 IMPRESSUM & DATENSCHUTZ
 
-1. **Sofort:** `intro_weiss.html` herunterladen → als `index.html` auf GitHub hochladen (alte ersetzen)
-2. **Formspree:** formspree.io → Account → Formular → ID in main.html einsetzen
-3. **Optional:** Domain `giulia-christen.com` verbinden (GitHub Pages → Settings → Custom Domain)
-4. **Langfristig:** Bilder aus main.html externalisieren → Dateigröße drastisch reduzieren
+### Impressum (impressum.html):
+- Verantwortlich: Giulia Christen
+- Atelier Zürich: Avery Manufattura — **⚠️ Adresse noch ausfüllen: `[Adresse Zürich]`**
+- Atelier Hamburg: Pyrate Style, Eppendorfer Weg 235, 20251 Hamburg
+- Gerichtsstand: Zürich, Schweiz — mit EU-Verbraucherschutz-Klausel für DE + IT
+- Hosting: GitHub Pages (GitHub Inc., USA)
+- Kontaktformular: Formspree Inc., USA
+
+### Datenschutz (datenschutz.html):
+- Gilt nach: DSG (Schweiz) + DSGVO (EU/Deutschland) + D.lgs. 196/2003 (Italien)
+- Keine Cookies, kein Tracking, keine Analytics
+- Beschwerderecht: EDÖB (CH), Hamburg (DE), Garante (IT)
 
 ---
 
-## 📞 KONTAKT / PROJEKT
+## ✅ WAS FERTIG IST
 
-- **Website-Entwicklung:** Remo Schenk (`remoschenk007`)
-- **GitHub:** `github.com/remoschenk007/GuliaChristen`
-- **Designerin:** Giulia Christen — `giulia@giulia-christen.com`
+- [x] Intro-Seite (index.html) — Rose + Unterschrift animiert → main.html
+- [x] Hauptwebsite (main.html) — alle 8 Sektionen komplett
+- [x] Unterschrift als Logo in der Nav (statt Text)
+- [x] About — kein Lebenslauf, sie ist der Star
+- [x] The Craft — Leder + Silber mit echten Bildern
+- [x] Artisan Noir — Kleider, Paris-DNA, Yamamoto-Philosophie
+- [x] Clients — Johnny Depp als Erster, alle 5 Namen
+- [x] Footer — eine Zeile: © + Impressum + Datenschutz
+- [x] impressum.html — CH + DE + IT rechtssicher (separate Datei)
+- [x] datenschutz.html — DSG + DSGVO + IT (separate Datei)
+- [x] Formspree ID eingesetzt: mpqnknvv
+- [x] E-Mail überall: giulia@giuliachristen.com (kein Bindestrich)
+- [x] Domain überall: giuliachristen.com (kein Bindestrich)
+- [x] SEO vollständig: Meta, OG, Schema.org, FAQPage
+- [x] AI Search: robots.txt mit allen AI-Crawlern erlaubt
+- [x] sitemap.xml erstellt
+- [x] Nav-Links sichtbarer (opacity erhöht)
 
 ---
 
-*Letzte Aktualisierung: Mai 2025*  
+## ⚠️ NOCH OFFEN / TODO
+
+1. **main.html auf GitHub hochladen** (neue Version, 5.2 MB) via "Add file → Upload files"
+2. **sitemap.xml + robots.txt** auf GitHub hochladen
+3. **Formspree:** giulia@giuliachristen.com als Linked Email → Form umstellen
+4. **Impressum:** Zürich-Adresse ausfüllen (`[Adresse Zürich]` Platzhalter)
+5. **Domain** giuliachristen.com verbinden: GitHub Pages → Settings → Pages → Custom Domain
+6. **Weitere Bilder:** Mehr Silberschmuck wenn vorhanden
+7. **Weitere Bilder:** Mehr Artisan Noir Kleider wenn vorhanden
+
+---
+
+## 🗂️ AUSGABE-DATEIEN
+
+Alle Dateien unter `/mnt/user-data/outputs/` (Claude) bzw. heruntergeladen:
+
+| Datei | Grösse | Aktion |
+|-------|--------|--------|
+| `main.html` | 5.2 MB | GitHub hochladen (ersetzt alte) |
+| `impressum.html` | 37 KB | ✅ schon auf GitHub |
+| `datenschutz.html` | 37 KB | ✅ schon auf GitHub |
+| `sitemap.xml` | 1 KB | GitHub hochladen |
+| `robots.txt` | 1 KB | GitHub hochladen |
+| `MASTERGIULIA.md` | — | GitHub ersetzen |
+
+---
+
+*Letzte Aktualisierung: 30. Mai 2026*
 *Dokument: MASTERGIULIA.md*
+*Projekt: github.com/remoschenk007/GuliaChristen*
