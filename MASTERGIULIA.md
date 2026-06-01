@@ -211,6 +211,26 @@ Alle Dateien unter `/mnt/user-data/outputs/` (Claude) bzw. heruntergeladen:
 | `robots.txt` | 1 KB | GitHub hochladen |
 | `MASTERGIULIA.md` | — | GitHub ersetzen |
 
+## SESSION — Juni 2026
+
+### Mobile Design Review
+- Screenshots der aktuellen mobile Ansicht analysiert (4 Screenshots)
+- Fazit: Desktop-Layout auf Mobile zu gequetscht, aber Stimmung stimmt
+- Entscheidung: Kein separates Mobile-HTML — stattdessen CSS `@media` fixes in main.html
+
+### Schriftart-Problem (markiert mit Pink)
+- Betroffener Text: "Every piece made once. Every piece made by hand. Every piece made for one."
+- Problem: Wird aktuell in Jost 200 (Sans-Serif) gerendert — passt nicht zum Rest
+- Fix: Soll Cormorant Garamond Italic sein, grosse Darstellung wie poetische Headlines
+- Status: ⏳ Warte auf main.html Upload um fix einzubauen
+
+### Offene TODOs (übernommen + neu)
+- [ ] main.html hochladen → Schriftart-Fix einbauen
+- [ ] intro_weiss.html als index.html auf GitHub ersetzen (404-Fix)
+- [ ] Formspree ID einsetzen (aktuell: YOUR_FORM_ID)
+- [ ] Optional: Domain giulia-christen.com verbinden
+- [ ] Langfristig: Bilder externalisieren (6.65 MB → klein)
+
 ---
 
 *Letzte Aktualisierung: 30. Mai 2026*
