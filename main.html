@@ -267,10 +267,12 @@ nav.s{padding:16px 56px;background:rgba(6,6,6,.97)}
 .h-bar{width:0;height:1px;background:linear-gradient(to right,rgba(237,232,223,.22),transparent);
   margin-bottom:22px;animation:bw 1.2s 2.7s ease forwards}
 @keyframes bw{to{width:72px}}
-.h-phrase{font-style:italic;font-weight:200;
-  font-size:clamp(1rem,2vw,1.45rem);
-  color:rgba(237,232,223,.75);line-height:1.6;
+.h-phrase{display:flex;flex-direction:column;gap:6px;
   opacity:0;animation:fu .8s 3.1s ease forwards}
+.h-phrase span{font-family:'Cinzel',serif;font-weight:300;
+  font-size:clamp(.45rem,.55vw,.6rem);
+  letter-spacing:.55em;text-transform:uppercase;
+  color:rgba(237,232,223,.28);line-height:2}
 .h-cta{margin-top:28px;opacity:0;animation:fu .8s 3.4s ease forwards}
 @keyframes fu{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 
@@ -555,9 +557,9 @@ footer{background:var(--b2);
       <div class="h-tag">Master Leather Couture &ensp;·&ensp; Zürich</div>
       <div class="h-bar"></div>
       <p class="h-phrase">
-        Every piece made once.<br>
-        Every piece made by hand.<br>
-        Every piece made for one.
+        <span>Every piece made once</span>
+        <span>Every piece made by hand</span>
+        <span>Every piece made for one</span>
       </p>
       <div class="h-cta">
         <a class="gl" onclick="go('shop')">Commission a piece</a>
