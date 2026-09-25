@@ -517,7 +517,9 @@ footer{background:var(--b2);
 .gca{padding:clamp(100px,14vh,150px) 24px clamp(70px,9vh,100px);text-align:center}
 .gca-in{max-width:980px;margin:0 auto}
 .gca-eyebrow{font-family:var(--c);font-weight:300;letter-spacing:.5em;font-size:.62rem;color:var(--w3);text-transform:uppercase;padding-left:.5em}
-.gca-title{font-family:var(--c);font-weight:400;letter-spacing:.2em;font-size:clamp(3rem,11vw,5.4rem);color:var(--w);margin-top:1.6rem;line-height:1;padding-left:.2em}
+.gca-title{font-family:var(--f);font-style:italic;font-weight:200;font-size:clamp(3rem,10vw,5.6rem);letter-spacing:.01em;color:var(--w2);margin-top:1.4rem;line-height:1.02}
+.gca-title .nera{font-style:normal;color:var(--w)}
+.gca-sub{font-family:var(--c);font-weight:300;letter-spacing:.55em;font-size:.62rem;color:var(--w3);text-transform:uppercase;margin-top:1.6rem;padding-left:.55em}
 .gca-text{font-style:italic;font-weight:300;font-size:clamp(1.25rem,3.3vw,1.6rem);line-height:1.55;color:var(--w2);max-width:660px;margin:2.8rem auto 0}
 .gca-object{margin-top:clamp(4.5rem,11vw,8rem);padding:clamp(3.5rem,9vw,6.5rem) 1rem clamp(2rem,5vw,3rem);background:radial-gradient(ellipse 68% 58% at 50% 36%,rgba(70,66,60,.40),rgba(6,6,6,0) 62%)}
 .gca-lbl{font-family:var(--c);font-weight:300;letter-spacing:.34em;font-size:.72rem;color:var(--w2);text-transform:uppercase;padding-left:.34em}
@@ -541,7 +543,7 @@ footer{background:var(--b2);
   <a onclick="go('shop');closemm()">Commission</a>
   <a onclick="go('craft');closemm()">The Craft</a>
   <a onclick="go('noir');closemm()">Artisan Noir</a>
-  <a onclick="go('art');closemm()">Art</a>
+  <a onclick="go('art');closemm()">Casa Nera</a>
   <a onclick="go('clients');closemm()">Clients</a>
   <a onclick="go('press');closemm()">Press</a>
   <a onclick="go('contact');closemm()">Contact</a>
@@ -555,7 +557,7 @@ footer{background:var(--b2);
     <li><a onclick="go('shop')" id="nl-shop">Commission</a></li>
     <li><a onclick="go('craft')" id="nl-craft">The Craft</a></li>
     <li><a onclick="go('noir')" id="nl-noir">Artisan Noir</a></li>
-    <li><a onclick="go('art')" id="nl-art">Art</a></li>
+    <li><a onclick="go('art')" id="nl-art">Casa Nera</a></li>
     <li><a onclick="go('clients')" id="nl-clients">Clients</a></li>
     <li><a onclick="go('press')" id="nl-press">Press</a></li>
     <li><a onclick="go('contact')" id="nl-contact">Contact</a></li>
@@ -1415,7 +1417,8 @@ footer{background:var(--b2);
   <section class="gca">
     <div class="gca-in">
       <p class="gca-eyebrow rv">Giulia Christen</p>
-      <h1 class="gca-title rv">ART</h1>
+      <h1 class="gca-title rv">Casa <span class="nera">Nera</span></h1>
+      <p class="gca-sub rv">art</p>
       <p class="gca-text rv">Im Zentrum steht die menschliche Figur — roh, unmittelbar, aus dem Dunkel heraus geformt. Gesichter, die zwischen Erscheinen und Verschwinden schweben; Köpfe und Körper von stiller Präsenz.</p>
       <div class="gca-object rv">
         <p class="gca-lbl">Die Galeriekarte</p>
