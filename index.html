@@ -113,15 +113,15 @@ html,body{width:100%;height:100%;overflow:hidden;background:#060606;cursor:none}
   <div class="rule"></div>
   <div class="city">Zürich &nbsp;·&nbsp; Hamburg</div>
 </div>
-<a class="enter" href="main.html">Enter</a>
+<a class="enter" href="main.html" onclick="try{sessionStorage.setItem('gc_entered','1')}catch(e){}">Enter</a>
 
 <script>
 const c=document.getElementById('cur');
 let mx=innerWidth/2,my=innerHeight/2,cx=mx,cy=my;
 document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});
 (function l(){cx+=(mx-cx)*.1;cy+=(my-cy)*.1;c.style.left=cx+'px';c.style.top=cy+'px';requestAnimationFrame(l)})();
-document.addEventListener('click',()=>location.href='main.html');
-document.addEventListener('touchend',e=>{e.preventDefault();location.href='main.html'});
+document.addEventListener('click',()=>{try{sessionStorage.setItem('gc_entered','1')}catch(e){}location.href='main.html'});
+document.addEventListener('touchend',e=>{e.preventDefault();try{sessionStorage.setItem('gc_entered','1')}catch(e){}location.href='main.html'});
 </script>
 </body>
 </html>
